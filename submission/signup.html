@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yggdrasil Signup Page</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<!--
+    Author: [Justin Francis M. Llaguno]
+    Date: [4/17/2026]
+    Purpose: Full form validation for my website
+-->
+
+
+    <!-- Makes the title "Signup Form" -->
+    <img src="../Yggdrasil.png" width="75px">
+    <h1>Yggdrasil Signup Form</h1>
+
+    <!-- Creates the html form to be submitted -->
+    <form class="container" onsubmit="return validateForm()">
+
+<!--==================== SECTION 1: PERSONAL INFORMATION ====================-->
+
+    <!-- Fullname input -->
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" onblur="this.style.backgroundColor='#DDDFDF'">
+    <span id="nameError" class="error"></span><br><br>
+
+    <!-- Date input -->
+    <label for="birthDate">Birthdate:</label>
+    <input type="date" id="birthDate" >
+    <span id="birthError" class="error"></span><br><br>
+
+    <!-- Sex input -->
+    <label>Sex:</label>
+        <input type="radio" name="sex" value="Male"> Male
+        <input type="radio" name="sex" value="Female"> Female
+    <span id="sexError" class="error"></span><br><br>
+
+    <!-- Email input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" onblur="this.style.backgroundColor='#DDDFDF'">
+    <span id="emailError" class="error"></span><br><br>
+
+<!--==================== SECTION 2: ACCOUNT DETAILS ====================-->
+
+    <!-- Username input -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" onblur="this.style.backgroundColor='#DDDFDF'">
+    <span id="usernameError" class="error"></span><br><br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" onblur="this.style.backgroundColor='#DDDFDF'">
+    <span id="passwordError" class="error"></span><br><br>
+
+    <!-- Confirm Password input -->
+    <label for="passwordConfirm">Password Confirm:</label>
+    <input type="password" id="passwordConfirm" onblur="this.style.backgroundColor='#DDDFDF'">
+    <span id="passwordConfirmError" class="error"></span><br><br>
+
+<!--==================== SECTION 3: TOPIC QUESTIONS ====================-->
+
+    <!-- Dropdown options -->
+    <label for="dropdown">Support our tree planting drives!:</label>
+    <select id="dropdown">
+      <option value="">-- choose --</option>
+      <option value="option1">Donate $1</option>
+      <option value="option2">Donate $5</option>
+      <option value="option3">Donate $10</option>
+    </select>
+    <span id="dropdownError" class="error"></span><br><br>
+
+    <!-- Checkbox boxes -->
+    <label>When are you available to plant trees:</label><br>
+    <input type="checkbox" name="available" value="option1"> Weekends<br>
+    <input type="checkbox" name="available" value="option2"> Weekdays<br>
+    <input type="checkbox" name="available" value="option3"> Holidays<br>
+    <input type="checkbox" name="available" value="option4"> Never<br>
+    <span id="checkboxError" class="error"></span><br>
+
+    <!-- How Often input -->
+    <label>How often do you go to tree planting drives:</label><br>
+        <input type="radio" name="often" value="minute"> Every Minute<br>
+        <input type="radio" name="often" value="day"> Daily<br>
+        <input type="radio" name="often" value="week"> Once a week<br>
+        <input type="radio" name="often" value="month"> Monthly<br>
+        <input type="radio" name="often" value="year"> Yearly<br>
+        <input type="radio" name="often" value="never"> Never<br>
+    <span id="oftenError" class="error"></span><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Join Now Save The Trees!</button>
+    <span id="success"></span><br><br>
+
+    <!-- Link to my 2nd Q AA-->
+    <a class="homepage" href="https://jllaguno0928.github.io/YGGDRASILQ2G9/">Back to Homepage</a>
+    </form>
+
+    <!-- Links the external script.js file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
